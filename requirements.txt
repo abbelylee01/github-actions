@@ -1,0 +1,3 @@
+# requirements.txt
+# This file lists dependencies for the Python project.
+pytest
