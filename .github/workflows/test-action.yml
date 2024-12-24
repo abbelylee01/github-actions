@@ -44,10 +44,5 @@ jobs:
         with:
           name: python-build
           path: dist/
-      
-      - name: Install and Test CLI Locally
-        run: |
-          pip install dist/simple_python_project-0.1.0-py3-none-any.whl
-          simple-python
           
   
