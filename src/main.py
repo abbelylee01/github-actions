@@ -12,3 +12,8 @@ if __name__ == "__main__":
 
     print(f"Addition: {add_numbers(num1, num2)}")
     print(f"Subtraction: {subtract_numbers(num1, num2)}")
+
+
+# To run the tests, execute the following command:
+# export PYTHONPATH=./src             
+# pytest
