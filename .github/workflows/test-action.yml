@@ -19,6 +19,7 @@ jobs:
           PYTHONPATH: ./src  # Add the src directory to PYTHONPATH
         run: pytest
   deploy:
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: Get the code from github to runner
