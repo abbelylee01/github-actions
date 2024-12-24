@@ -1,4 +1,4 @@
-# simple_python_project/main.py
+# Project_cicd/src/main.py
 
 def add_numbers(a, b):
     return a + b

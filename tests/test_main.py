@@ -1,6 +1,6 @@
-# test_main.py
+# tests/test_main.py
 import pytest
-from main import add_numbers, subtract_numbers
+from simple_python_project.main import add_numbers, subtract_numbers  # Updated import
 
 def test_add_numbers():
     assert add_numbers(3, 5) == 8
@@ -14,3 +14,6 @@ def test_subtract_numbers():
 
 if __name__ == "__main__":
     pytest.main()
+
+# to run test, navigate to root Project_cicd directory and run the following command:
+#  run pytest
