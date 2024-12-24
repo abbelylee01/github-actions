@@ -6,12 +6,16 @@ def add_numbers(a, b):
 def subtract_numbers(a, b):
     return a - b
 
-if __name__ == "__main__":
+def main():
     num1 = int(input("Enter first number: "))
     num2 = int(input("Enter second number: "))
 
     print(f"Addition: {add_numbers(num1, num2)}")
     print(f"Subtraction: {subtract_numbers(num1, num2)}")
+
+if __name__ == "__main__":
+    main()
+
 
 
 # To run the tests, execute the following command:
