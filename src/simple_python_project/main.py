@@ -4,7 +4,7 @@
 def add_numbers(a, c):
     return a + c
 
-
+# subraction function
 def subtract_numbers(a, b):
     return a - b
 
