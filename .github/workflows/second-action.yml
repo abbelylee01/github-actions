@@ -3,7 +3,19 @@ on:
   pull_request:
     types:
       - opened
+    branches:
+      - main  # This is main branch
+      - feature/** # This is feature/./...
+      - dev
   workflow_dispatch:
+  push:
+    branches:
+      - main  # This is main branch
+      - feature/** # This is feature/./...
+      - dev
+    paths-ignore:
+      - '.github/workflows/*'  # Ignore changes to workflow files
+   
 jobs:
   first-job:
     runs-on: ubuntu-latest
