@@ -1,8 +1,8 @@
 # Project_cicd/src/main.py
 
 
-def add_numbers(a, b):
-    return a + b
+def add_numbers(a, c):
+    return a + c
 
 
 def subtract_numbers(a, b):
