@@ -1,3 +1,4 @@
 # requirements.txt
 # This file lists dependencies for the Python project.
-pytest
+pytest==8.3.4
+flake8==7.1.1
