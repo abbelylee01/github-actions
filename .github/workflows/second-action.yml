@@ -1,0 +1,25 @@
+name: Second Workflow
+on:
+  pull_request:
+    types:
+      - opened
+      - closed
+  workflow_dispatch:
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo "Hello World"
+      - name: Print goodbye
+        run: echo "Done -Bye"
+
+  second-job:
+    needs: first-job
+    runs-on: ubuntu-latest
+    steps:
+      - name: We are deploying
+        run: echo "Deploying in progress"
+      - name: Print goodbye
+        run: echo "Deployment done -Bye"
+
