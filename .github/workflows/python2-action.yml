@@ -1,5 +1,10 @@
 name: Test2 Project
-on: [push, workflow_dispatch]
+on:
+  push:
+    paths-ignore:
+      - '.github/workflows/*'  # Ignore changes to workflow files
+  
+  workflow_dispatch:
 
 jobs:
   lint:
